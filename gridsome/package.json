@@ -5,9 +5,13 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "dev": "gridsome develop --port $PORT",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "gridsome": "^0.6.0"
-  }
+    "gridsome": "^0.6.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }

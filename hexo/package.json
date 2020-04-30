@@ -14,10 +14,14 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-renderer-marked": "^1.0.1",
-    "hexo-server": "^0.3.3"
+    "hexo-server": "^0.3.3",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "dev": "hexo server -p $PORT",
-    "build": "hexo generate"
-  }
+    "build": "hexo generate",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }

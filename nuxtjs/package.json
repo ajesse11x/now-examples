@@ -7,12 +7,16 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
-  }
+  },
+  "snyk": true
 }
